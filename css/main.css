@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+table {
+  width: 800px;
+  min-height: 200px;
+  /* height: 200px; */
+  /* background-color: lightgreen; */
+  padding: 20px;
+  text-align: center;
+}
+
+tr {
+  /* padding: 20px; */
+  /* background-color: lightgoldenrodyellow; */
+  background-color: rgb(236, 213, 255);
+
+  min-width: 10px;
+}
+
+.btn {
+  padding: 5px 8px;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px 3px 3px 15px;
+}
+
+.btn-read {
+  background-color: blue;
+}
+
+.btn-update {
+  background-color: orange;
+}
+
+.btn-delete {
+  background-color: red;
+}
+
+.btn-add-book {
+  background-color: rgb(59, 184, 59);
+}
+
+.btn-close-modal {
+  background-color: blue;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.btn-read:hover {
+  color: blue;
+}
+
+.btn-update:hover {
+  color: orange;
+}
+
+.btn-delete:hover {
+  color: red;
+}
+
+.btn-add-book:hover {
+  color: rgb(59, 184, 59);
+}
+
+.modal {
+  /* why when i add flexbox its stuck and wont toggle between hidden and visable? */
+
+  /* visibility: hidden; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+
+  background-color: rgb(236, 213, 255);
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.modal > * {
+  margin-top: 30px;
+}
+
+.modal .btn {
+  margin-top: 50px;
+}
+
+.modal p img {
+  width: 100px;
+  height: 130px;
+}
+
+.modal p span {
+  user-select: none;
+}
+
+.modal p span:not(.rate) {
+  cursor: pointer;
+  background-color: orange;
+}
+
+.modal p span {
+  padding: 10px;
+  background-color: rgb(236, 213, 255);
+}
+
+.modal p span:not(.rate):hover {
+  background-color: rgb(255, 179, 38);
+}
